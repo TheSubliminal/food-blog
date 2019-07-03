@@ -52,6 +52,7 @@ header {
   font-size: 2rem;
   background: #2EC4B6;
   list-style-type: none;
+  z-index: 100;
 }
 .hamburger-menu-items li {
   padding: 10px 0;
@@ -72,6 +73,10 @@ header {
 
   .header-container {
     margin-top: 0;
+  }
+
+  .logo {
+    margin-left: 0;
   }
 
   .controls nav {

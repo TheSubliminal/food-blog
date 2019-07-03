@@ -59,6 +59,7 @@ header {
     font-size: 2rem;
     background: $max-blue-green;
     list-style-type: none;
+    z-index: 100;
 
     li {
         padding: 10px 0;
@@ -81,6 +82,10 @@ header {
 
     .header-container {
         margin-top: 0;
+    }
+
+    .logo {
+        margin-left: 0;
     }
 
     .controls nav {
