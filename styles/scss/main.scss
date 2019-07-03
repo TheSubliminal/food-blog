@@ -1,0 +1,65 @@
+@import 'colors';
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 15px;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: stretch;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 500px;
+    border: 3px solid black;
+    padding: 5px;
+
+    .photo {
+        text-align: center;
+        img {
+            height: 400px;
+            width: 100%;
+            max-width: 500px;
+            object-fit: cover;
+        }
+    }
+
+    .head {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .description {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .foot {
+        border-top: 1px solid black;
+        padding-top: 5px;
+
+        .fa, .fas {
+            margin-right: 5px;
+        }
+
+        .fa-star {
+            color: gold;
+        }
+
+        .fa-comment {
+            color: lightblue;
+        }
+
+        .time {
+            float: right;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 15px;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 500px;
+  border: 3px solid black;
+  padding: 5px;
+}
+.card .photo {
+  text-align: center;
+}
+.card .photo img {
+  height: 400px;
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+}
+.card .head {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.card .description {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card .foot {
+  border-top: 1px solid black;
+  padding-top: 5px;
+}
+.card .foot .fa, .card .foot .fas {
+  margin-right: 5px;
+}
+.card .foot .fa-star {
+  color: gold;
+}
+.card .foot .fa-comment {
+  color: lightblue;
+}
+.card .foot .time {
+  float: right;
+}
+
+/*# sourceMappingURL=main.css.map */

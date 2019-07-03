@@ -16,4 +16,12 @@ body {
   text-align: center;
 }
 
+.content-container {
+  max-width: 1200px;
+  margin: 10px auto 0 auto;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: auto;
+}
+
 /*# sourceMappingURL=index.css.map */

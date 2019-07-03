@@ -30,13 +30,13 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.icon-btns .fa {
+.icon-btns .fas, .icon-btns .fab {
   font-size: 20pt;
 }
 .icon-btns .search-icon {
   margin-right: 40px;
 }
-.icon-btns .social .fa {
+.icon-btns .social .fab {
   margin-right: 5px;
 }
 
