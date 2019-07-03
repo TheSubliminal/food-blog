@@ -1,0 +1,140 @@
+aside {
+  border: 3px solid black;
+  padding: 5px;
+  background-color: #CBF3F0;
+}
+aside h3 {
+  margin: 0;
+  text-align: center;
+}
+aside h4.section-header {
+  margin: 0 0 5px 0;
+  border-bottom: 1px solid black;
+}
+aside img {
+  margin-top: 0;
+  height: 400px;
+  width: 300px;
+  max-width: 500px;
+  object-fit: cover;
+}
+aside input {
+  box-sizing: border-box;
+  box-shadow: none;
+  border-radius: 5px;
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15pt;
+}
+aside input[type=text],
+aside input[type=email] {
+  height: 20px;
+  padding: 15px 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: none;
+  transition: border 0.3s;
+}
+aside input[type=text]:focus,
+aside input[type=email]:focus {
+  border: 2px solid black;
+}
+aside .social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+aside .social .fab {
+  font-size: 20pt;
+}
+aside .subscribe form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+aside .subscribe form .name-field,
+aside .subscribe form .email-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5px;
+}
+aside .subscribe form .name-field label,
+aside .subscribe form .email-field label {
+  margin-right: 5px;
+  font-weight: bold;
+}
+aside .subscribe form input[type=submit] {
+  border: none;
+  padding: 8px 0;
+  text-decoration: underline;
+  background-color: #FF9F1C;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+aside .subscribe form input[type=submit]:hover {
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.45);
+}
+aside .search-controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+aside .search-controls input {
+  width: 80%;
+}
+aside .search-controls .fa-search {
+  font-size: 20pt;
+  margin-right: 0 10px;
+}
+aside .tags .tag-cloud {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #FFBF69;
+  text-align: center;
+}
+aside .comments {
+  margin-bottom: 0;
+}
+aside .comments .comment {
+  border: 2px solid grey;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+aside .comments .comment .comment-body,
+aside .comments .comment img {
+  padding: 5px;
+}
+aside .comments .comment img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+aside .comments .comment .name {
+  font-weight: bold;
+  margin-right: 10px;
+}
+aside .comments .comment .time {
+  font-size: 12pt;
+  color: grey;
+}
+aside .comments .comment .comment-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 230px;
+}
+aside .comments .comment:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+aside > * {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=aside.css.map */

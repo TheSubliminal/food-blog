@@ -11,6 +11,18 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+a, .fa-search {
+    &:hover {
+        color: $topaz;
+    }
+}
+
+a,
+.fab,
+.fa-search {
+    transition: color 0.15s;
+}
+
 .header-container {
     width: 100%;
     margin-top: 20px;
@@ -24,4 +36,29 @@ body {
     display: grid;
     grid-template-columns: 5fr 1fr;
     grid-template-rows: auto;
+    grid-gap: 15px;
+    align-items: start;
+}
+
+.social {
+    a:hover {
+        color: black;
+        transition: none;
+    }
+
+    .fab.fa-youtube:hover {
+        color: #BB0000;
+    }
+
+    .fab.fa-instagram:hover {
+        color: #833AB4;
+    }
+
+    .fab.fa-twitter:hover {
+        color: #00ACED;
+    }
+
+    .fab.fa-foursquare:hover {
+        color: #0072B1;
+    }
 }

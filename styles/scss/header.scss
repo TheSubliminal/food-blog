@@ -20,15 +20,6 @@ header {
     display: grid;
     grid-template-rows: repeat(auto-fill, 1fr);
 
-    a,
-    .fa {
-        transition: color 0.15s;
-
-        &:hover {
-            color: $topaz;
-        }
-    }
-
     nav {
         align-self: end;
         font-size: 15pt;
