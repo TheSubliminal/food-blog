@@ -10,14 +10,14 @@ main {
     align-items: stretch;
 }
 
-.card {
+.article-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-width: 500px;
     padding: 5px;
 
-    .photo {
+    .article-photo {
         text-align: center;
 
         img {
@@ -34,12 +34,12 @@ main {
         }
     }
 
-    .head {
+    .article-header {
         margin-top: 5px;
         margin-bottom: 5px;
     }
 
-    .description {
+    .article-description {
         margin-top: 5px;
         margin-bottom: 5px;
         display: -webkit-box;
@@ -49,7 +49,7 @@ main {
         text-overflow: ellipsis;
     }
 
-    .foot {
+    .article-footer {
         border-top: 1px solid black;
         border-bottom: 1px solid black;
         padding: 5px 0;
@@ -66,7 +66,7 @@ main {
             color: lightblue;
         }
 
-        .time {
+        .article-posted-time {
             float: right;
         }
     }

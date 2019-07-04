@@ -8,17 +8,17 @@ main {
   align-items: stretch;
 }
 
-.card {
+.article-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 500px;
   padding: 5px;
 }
-.card .photo {
+.article-card .article-photo {
   text-align: center;
 }
-.card .photo img {
+.article-card .article-photo img {
   border-radius: 5px;
   height: 400px;
   width: 100%;
@@ -26,14 +26,14 @@ main {
   object-fit: cover;
   transition: box-shadow 0.2s;
 }
-.card .photo img:hover {
+.article-card .article-photo img:hover {
   box-shadow: 7px 7px 6px 3px rgba(0, 0, 0, 0.65);
 }
-.card .head {
+.article-card .article-header {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.card .description {
+.article-card .article-description {
   margin-top: 5px;
   margin-bottom: 5px;
   display: -webkit-box;
@@ -42,21 +42,21 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.card .foot {
+.article-card .article-footer {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 5px 0;
 }
-.card .foot .fa, .card .foot .fas {
+.article-card .article-footer .fa, .article-card .article-footer .fas {
   margin-right: 5px;
 }
-.card .foot .fa-star {
+.article-card .article-footer .fa-star {
   color: gold;
 }
-.card .foot .fa-comment {
+.article-card .article-footer .fa-comment {
   color: lightblue;
 }
-.card .foot .time {
+.article-card .article-footer .article-posted-time {
   float: right;
 }
 

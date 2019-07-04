@@ -1,13 +1,12 @@
-#menu-toggle {
+.hamburger-menu-toggle {
   align-self: center;
-  display: block;
   position: relative;
   margin-left: 20px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
 }
-#menu-toggle input {
+.hamburger-menu-toggle input {
   display: block;
   width: 40px;
   height: 32px;
@@ -17,7 +16,7 @@
   /* hide this */
   z-index: 2;
 }
-#menu-toggle span {
+.hamburger-menu-toggle span {
   display: block;
   width: 40px;
   height: 6px;
@@ -29,37 +28,37 @@
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
-#menu-toggle span:nth-child(2) {
+.hamburger-menu-toggle span:nth-child(2) {
   margin-top: 5px;
 }
-#menu-toggle span:nth-last-child(2) {
+.hamburger-menu-toggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
-#menu-toggle input:checked ~ span {
+.hamburger-menu-toggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
-#menu-toggle input:checked ~ span:nth-last-child(3) {
+.hamburger-menu-toggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
-#menu-toggle input:checked ~ span:nth-last-child(2) {
+.hamburger-menu-toggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
-#menu-toggle input:checked ~ ul {
+.hamburger-menu-toggle input:checked ~ ul {
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#hamburger-menu {
+.hamburger-menu-items {
   position: fixed;
   top: 0;
-  left: -240px;
+  left: -60vw;
   margin: 0;
   padding: 75px 0 0 0;
-  width: 240px;
+  width: 60vw;
   height: 100%;
   font-size: 2rem;
   background: #2EC4B6;
@@ -68,15 +67,15 @@
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
-#hamburger-menu li {
+.hamburger-menu-items li {
   padding: 10px 0;
   border-bottom: 1px solid black;
   transition: color 0.15s;
 }
-#hamburger-menu li:hover a {
+.hamburger-menu-items li:hover a {
   color: #FFBF69;
 }
-#hamburger-menu li:first-child {
+.hamburger-menu-items li:first-child {
   border-top: 1px solid black;
 }
 

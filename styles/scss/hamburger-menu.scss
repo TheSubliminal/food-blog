@@ -1,8 +1,7 @@
 @import 'colors';
 
-#menu-toggle {
+.hamburger-menu-toggle {
     align-self: center;
-    display: block;
     position: relative;
     margin-left: 20px;
 
@@ -74,13 +73,15 @@
     }
 }
 
-#hamburger-menu {
+.hamburger-menu-items {
+    $menu-width: 60vw;
+
     position: fixed;
     top: 0;
-    left: -240px;
+    left: -$menu-width;
     margin: 0;
     padding: 75px 0 0 0;
-    width: 240px;
+    width: $menu-width;
     height: 100%;
     font-size: 2rem;
     background: $max-blue-green;

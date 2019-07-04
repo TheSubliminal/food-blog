@@ -41,7 +41,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  div#menu-toggle {
+  .hamburger-menu-toggle {
     display: block;
   }
 
@@ -76,7 +76,7 @@
   }
 }
 @media only screen and (min-width: 600px) {
-  div#menu-toggle {
+  .hamburger-menu-toggle {
     display: none;
   }
 }

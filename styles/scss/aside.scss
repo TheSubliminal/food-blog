@@ -5,7 +5,7 @@ aside {
     padding: 5px;
     background-color: $aero-blue;
 
-    h4.section-header {
+    .section-header {
         margin: 0 0 5px 0;
         border-bottom: 1px solid black;
     }
@@ -19,7 +19,7 @@ aside > *:not(:first-child) {
     margin-top: 10px;
 }
 
-aside.author-info {
+.author-info {
     grid-area: aside-author;
     text-align: center;
 
@@ -34,12 +34,12 @@ aside.author-info {
         }
     }
 
-    .name {
+    .author-name {
         margin: 0;
     }
 }
 
-aside.other {
+.other {
     grid-area: aside-other;
 
     input {
@@ -183,7 +183,7 @@ aside.other {
         box-sizing: border-box;
     }
 
-    aside.other {
+    .other {
         input[type=text],
         input[type=email] {
             height: 50px;
