@@ -50,11 +50,10 @@
     top: 0;
     margin-top: 0;
   }
-
-  .logo {
+  header .logo {
     z-index: 100;
   }
-  .logo img {
+  header .logo img {
     min-height: 50px;
     height: 50px;
     margin-left: 0;
