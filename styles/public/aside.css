@@ -63,26 +63,26 @@ aside > *:not(:first-child) {
 .other .social .fab {
   font-size: 20pt;
 }
-.other .subscribe form {
+.other .subscribe-form {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
-.other .subscribe form .name-field,
-.other .subscribe form .email-field {
+.other .subscribe-form .name-field,
+.other .subscribe-form .email-field {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 5px;
 }
-.other .subscribe form .name-field label,
-.other .subscribe form .email-field label {
+.other .subscribe-form .name-field label,
+.other .subscribe-form .email-field label {
   margin-right: 5px;
   font-weight: bold;
 }
-.other .subscribe form input[type=submit] {
+.other .subscribe-form input[type=submit] {
   border: none;
   padding: 8px 0;
   text-decoration: underline;
@@ -90,7 +90,7 @@ aside > *:not(:first-child) {
   transition: box-shadow 0.2s;
   cursor: pointer;
 }
-.other .subscribe form input[type=submit]:hover {
+.other .subscribe-form input[type=submit]:hover {
   box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.45);
 }
 .other .search-controls {
@@ -98,7 +98,7 @@ aside > *:not(:first-child) {
   justify-content: space-evenly;
   align-items: center;
 }
-.other .search-controls input {
+.other .search-controls .search-input {
   width: 80%;
 }
 .other .search-controls .fa-search {
@@ -119,23 +119,23 @@ aside > *:not(:first-child) {
   background-color: white;
 }
 .other .comments .comment .comment-body,
-.other .comments .comment img {
+.other .comments .comment .comment-author-image {
   padding: 5px;
 }
 .other .comments .comment .comment-body {
   min-width: 0;
 }
-.other .comments .comment img {
+.other .comments .comment .comment-author-image {
   height: 50px;
   width: 50px;
   object-fit: cover;
   border-radius: 10px;
 }
-.other .comments .comment .name {
+.other .comments .comment .comment-author-name {
   font-weight: bold;
   margin-right: 10px;
 }
-.other .comments .comment .time {
+.other .comments .comment .comment-posted-time {
   font-size: 12pt;
   color: grey;
 }

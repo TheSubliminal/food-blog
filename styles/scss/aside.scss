@@ -73,7 +73,7 @@ aside > *:not(:first-child) {
         }
     }
 
-    .subscribe form {
+    .subscribe-form {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -112,7 +112,7 @@ aside > *:not(:first-child) {
         justify-content: space-evenly;
         align-items: center;
 
-        input {
+        .search-input {
             width: 80%;
         }
 
@@ -138,7 +138,7 @@ aside > *:not(:first-child) {
             background-color: white;
 
             .comment-body,
-            img {
+            .comment-author-image {
                 padding: 5px;
             }
 
@@ -146,19 +146,19 @@ aside > *:not(:first-child) {
                 min-width: 0;
             }
 
-            img {
+            .comment-author-image {
                 height: 50px;
                 width: 50px;
                 object-fit: cover;
                 border-radius: 10px;
             }
 
-            .name {
+            .comment-author-name {
                 font-weight: bold;
                 margin-right: 10px;
             }
 
-            .time {
+            .comment-posted-time {
                 font-size: 12pt;
                 color: grey;
             }
