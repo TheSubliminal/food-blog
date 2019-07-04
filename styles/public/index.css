@@ -1,11 +1,11 @@
-body, html {
+html {
   height: 100%;
 }
 
 body {
-  width: 100%;
-  height: 2000px;
+  min-height: 100%;
   margin: 0;
+  box-sizing: border-box;
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -30,10 +30,9 @@ a,
   max-width: 1200px;
   margin: 10px auto 0 auto;
   display: grid;
-  grid-template-columns: 5fr 1fr;
-  grid-template-rows: auto;
   grid-gap: 15px;
   align-items: start;
+  width: 100vw;
 }
 
 .social a:hover {
@@ -51,6 +50,17 @@ a,
 }
 .social .fab.fa-foursquare:hover {
   color: #0072B1;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-container {
+    grid-template: "aside-author" "main" "aside-other"/100vw;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .content-container {
+    grid-template: "main aside-author" "main aside-other" "main ..."/5fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,6 +1,7 @@
 @import 'colors';
 
 main {
+    grid-area: main;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 15px;
@@ -19,7 +20,7 @@ main {
 
     .photo {
         text-align: center;
-        
+
         img {
             height: 400px;
             width: 100%;

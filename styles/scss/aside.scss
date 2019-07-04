@@ -1,31 +1,49 @@
 @import 'colors';
 
 aside {
+    justify-self: center;
     border: 3px solid black;
     padding: 5px;
     background-color: $aero-blue;
-
-    h3 {
-        margin: 0;
-        text-align: center;
-    }
 
     h4.section-header {
         margin: 0 0 5px 0;
         border-bottom: 1px solid black;
     }
+}
 
-    img {
-        margin-top: 0;
-        height: 400px;
-        width: 300px;
-        max-width: 500px;
-        object-fit: cover;
+aside > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+aside > *:not(:first-child) {
+    margin-top: 10px;
+}
+
+aside.author-info {
+    grid-area: aside-author;
+    text-align: center;
+
+    .author-photo {
+        margin: 0;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
     }
+
+    .name {
+        margin: 0;
+    }
+}
+
+aside.other {
+    grid-area: aside-other;
 
     input {
         box-sizing: border-box;
-        box-shadow: none;
         border-radius: 5px;
         width: 100%;
         font-family: 'Roboto Condensed', sans-serif;
@@ -37,7 +55,6 @@ aside {
         height: 20px;
         padding: 15px 5px;
         border: 2px solid rgba(0, 0, 0, 0.3);
-        box-shadow: none;
         transition: border 0.3s;
 
         &:focus {
@@ -46,6 +63,7 @@ aside {
     }
 
     .social {
+        margin-top: 10px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -112,8 +130,6 @@ aside {
     }
 
     .comments {
-        margin-bottom: 0;
-
         .comment {
             border: 2px solid grey;
             border-radius: 5px;
@@ -124,6 +140,10 @@ aside {
             .comment-body,
             img {
                 padding: 5px;
+            }
+
+            .comment-body {
+                min-width: 0;
             }
 
             img {
@@ -147,7 +167,6 @@ aside {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                max-width: 230px;
             }
         }
 
@@ -157,7 +176,23 @@ aside {
     }
 }
 
-aside > * {
-    margin-top: 10px;
-    margin-bottom: 10px;
+@media only screen and (max-width: 600px) {
+    aside {
+        max-width: 500px;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+
+    aside.other {
+        input[type=text],
+        input[type=email] {
+            height: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    aside {
+        max-width: 300px;
+    }
 }
