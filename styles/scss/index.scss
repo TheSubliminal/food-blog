@@ -23,7 +23,7 @@ a,
     transition: color 0.15s;
 }
 
-.header-container {
+header {
     width: 100%;
     margin-top: 20px;
     background-color: $max-blue-green;
@@ -37,6 +37,12 @@ a,
     grid-gap: 15px;
     align-items: start;
     width: 100vw;
+}
+
+footer {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    background-color: $max-blue-green;
 }
 
 .social {

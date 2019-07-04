@@ -1,6 +1,6 @@
 @import 'colors';
 
-header {
+.header-container {
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -52,7 +52,7 @@ header {
         display: block;
     }
 
-    .header-container {
+    header {
         position: sticky;
         top: 0;
         margin-top: 0;

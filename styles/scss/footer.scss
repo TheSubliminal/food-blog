@@ -1,0 +1,78 @@
+@import 'colors';
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.info {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .for-visitor {
+        margin: 0;
+        grid-area: for-visitor;
+        word-wrap: break-word;
+        text-align: center;
+        font-style: italic;
+    }
+
+    .contacts {
+        grid-area: contacts;
+        table {
+            border-spacing: 10px;
+
+            td {
+                vertical-align: top;
+            }
+        }
+
+        .addr {
+            font-weight: bold;
+        }
+    }
+}
+
+.copyright {
+    padding: 10px 0 10px 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        margin-bottom: 0;
+    }
+
+    .info {
+        padding: 5px 5px 0 5px;
+        grid-template:
+            "for-visitor logo"
+            "contacts contacts"
+            / 1fr 1fr;
+        grid-gap: 10px;
+
+        .logo {
+            justify-self: center;
+        }
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .info {
+        grid-template:
+            "logo for-visitor contacts"
+            / 1fr 1fr 1fr;
+
+        .logo {
+            justify-self: start;
+        }
+    }
+}
