@@ -1,6 +1,5 @@
 aside {
   justify-self: center;
-  border: 3px solid black;
   padding: 5px;
   background-color: #CBF3F0;
 }
@@ -26,6 +25,7 @@ aside.author-info .author-photo {
   text-align: center;
 }
 aside.author-info .author-photo img {
+  border-radius: 5px;
   max-width: 100%;
   object-fit: cover;
 }

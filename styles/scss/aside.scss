@@ -2,7 +2,6 @@
 
 aside {
     justify-self: center;
-    border: 3px solid black;
     padding: 5px;
     background-color: $aero-blue;
 
@@ -29,6 +28,7 @@ aside.author-info {
         text-align: center;
 
         img {
+            border-radius: 5px;
             max-width: 100%;
             object-fit: cover;
         }
