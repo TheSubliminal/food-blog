@@ -17,6 +17,7 @@ main {
 }
 .article-card .article-photo {
   text-align: center;
+  overflow: hidden;
 }
 .article-card .article-photo img {
   border-radius: 5px;
@@ -24,10 +25,7 @@ main {
   width: 100%;
   max-width: 500px;
   object-fit: cover;
-  transition: box-shadow 0.2s;
-}
-.article-card .article-photo img:hover {
-  box-shadow: 7px 7px 6px 3px rgba(0, 0, 0, 0.65);
+  transition: transform 0.2s;
 }
 .article-card .article-header {
   margin-top: 5px;
@@ -58,6 +56,10 @@ main {
 }
 .article-card .article-footer .article-posted-time {
   float: right;
+}
+
+.article-card:hover img {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=main.css.map */
