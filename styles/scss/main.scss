@@ -18,8 +18,10 @@ main {
     padding: 5px;
 
     .article-photo {
+        border-radius: 5px;
         text-align: center;
         overflow: hidden;
+        max-height: 400px;
 
         img {
             border-radius: 5px;

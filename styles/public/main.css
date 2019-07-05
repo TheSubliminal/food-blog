@@ -16,8 +16,10 @@ main {
   padding: 5px;
 }
 .article-card .article-photo {
+  border-radius: 5px;
   text-align: center;
   overflow: hidden;
+  max-height: 400px;
 }
 .article-card .article-photo img {
   border-radius: 5px;
