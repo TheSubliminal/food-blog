@@ -24,6 +24,7 @@ header {
   margin-top: 20px;
   background-color: #2EC4B6;
   text-align: center;
+  z-index: 100;
 }
 
 .content-container {
